@@ -1,0 +1,39 @@
+/// Estilos para componentes de tarjeta
+/// 
+/// Define un contenedor con fondo blanco, esquinas redondeadas y sombra. 
+/// Incluye estilos para encabezados, párrafos e imágenes.
+/// 
+/// @author Miguel
+/// @since 1.0.0
+/// @group Card
+
+.card {
+  background: #fff;                  /// Fondo blanco de la tarjeta
+  border-radius: 8px;               /// Bordes redondeados
+  overflow: hidden;                /// Oculta contenido que sobresalga
+  @extend %box-shadow;             /// Extiende la sombra predefinida
+
+  &:hover {
+    box-shadow: 0px 0px 10px $primary-color; /// Sombra al hacer hover
+  }
+
+  /// Encabezado dentro de la tarjeta
+  h3 {
+    font-size: font-size(large);   /// Tamaño de fuente grande
+    margin: 1rem;                 /// Margen alrededor del título
+  }
+
+  /// Párrafo dentro de la tarjeta
+  p {
+    margin: 0 1rem 1rem;          /// Margen inferior e interno
+  }
+
+  /// Imagen en la parte superior de la tarjeta
+  img {
+    width: 100%;                  /// Imagen ocupa todo el ancho
+    height: 300px;                /// Altura fija de la imagen
+    object-fit: cover;            /// Ajuste para cubrir sin deformar
+    border-top-left-radius: 8px;  /// Redondear esquina superior izquierda
+    border-top-right-radius: 8px; /// Redondear esquina superior derecha
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "scripts": {
+  "docs": "sassdoc scss/ docs/"
+  }
+,
+  "devDependencies": {
+    "sass": "^1.84.0",
+    "sassdoc": "^2.7.4"
+  }
+}
+

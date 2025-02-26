@@ -1,0 +1,15 @@
+/// Estilos para el layout en grid
+/// 
+/// Crea un contenedor de cuadrícula responsivo con márgenes laterales y espacio entre elementos.
+/// 
+/// @author Miguel
+/// @since 1.0.0
+/// @group Grid
+
+.grid {
+  margin-right: 6%;                                /// Margen derecho
+  margin-left: 6%;                                 /// Margen izquierdo
+  display: grid;                                   /// Usa Grid Layout
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /// Columnas automáticas y responsivas
+  gap: 5rem;                                       /// Espaciado entre elementos
+}
